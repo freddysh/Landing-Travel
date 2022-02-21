@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card{
+    @apply w-48 h-64 shadow-md rounded-lg flex-none transition-all hover:-translate-y-4 hover:shadow-xl
+}
+.card .card-content{
+    @apply w-full h-2/5 bg-secondary dark:bg-gray-700 rounded-b-lg
+}
+.card .card-content-white{
+    @apply w-full h-2/5 bg-white rounded-b-lg
+}
+.card .card-content .card-title{
+    @apply text-white text-xl px-4 py-2
+}
+
+.card .card-content .card-detail{
+    @apply text-white px-4
+}
+.card .card-content-white .card-title{
+    @apply text-black text-xl px-4 py-2
+}
+
+.card .card-content-white .card-detail{
+    @apply text-black px-4
+}
+.CardTitle{
+    @apply text-3xl px-8 pt-8 pb-2 font-semibold text-white
+}
